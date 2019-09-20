@@ -1,0 +1,76 @@
+[debug] [2019-01-02T22:52:04.827Z] ----------------------------------------------------------------------
+[debug] [2019-01-02T22:52:04.830Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-01-02T22:52:04.830Z] CLI Version:   6.2.2
+[debug] [2019-01-02T22:52:04.830Z] Platform:      darwin
+[debug] [2019-01-02T22:52:04.830Z] Node Version:  v8.11.2
+[debug] [2019-01-02T22:52:04.830Z] Time:          Wed Jan 02 2019 17:52:04 GMT-0500 (EST)
+[debug] [2019-01-02T22:52:04.830Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-01-02T22:52:04.841Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-01-02T22:52:04.842Z] > authorizing via signed-in user
+[debug] [2019-01-02T22:52:04.842Z] [iam] checking project resumewebsite-dcf41 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-01-02T22:52:04.844Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/resumewebsite-dcf41:testIamPermissions  
+
+[debug] [2019-01-02T22:52:05.128Z] <<< HTTP RESPONSE 200
+[debug] [2019-01-02T22:52:05.130Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/resumewebsite-dcf41  
+ 
+[debug] [2019-01-02T22:52:05.350Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'resumewebsite-dcf41'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-01-02T22:52:05.356Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/resumewebsite-dcf41/versions  
+
+[debug] [2019-01-02T22:52:15.610Z] <<< HTTP RESPONSE 503
+[debug] [2019-01-02T22:52:15.610Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 503, The service is currently unavailable.
+[debug] [2019-01-02T22:52:15.728Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 503,
+      "message": "The service is currently unavailable.",
+      "status": "UNAVAILABLE"
+    }
+  },
+  "response": {
+    "statusCode": 503,
+    "body": {
+      "error": {
+        "code": 503,
+        "message": "The service is currently unavailable.",
+        "status": "UNAVAILABLE"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 02 Jan 2019 22:52:15 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39,35\"",
+      "accept-ranges": "none",
+      "connection": "close"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/resumewebsite-dcf41/versions",
+        "path": "/v1beta1/sites/resumewebsite-dcf41/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/resumewebsite-dcf41/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
