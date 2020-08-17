@@ -74,3 +74,17 @@
     }
   }
 }
+[debug] [2020-08-17T21:20:47.986Z] ----------------------------------------------------------------------
+[debug] [2020-08-17T21:20:47.988Z] Command:       /Users/insanity/.nvm/versions/node/v10.16.3/bin/node /Users/insanity/.nvm/versions/node/v10.16.3/bin/firebase deploy
+[debug] [2020-08-17T21:20:47.989Z] CLI Version:   8.0.2
+[debug] [2020-08-17T21:20:47.989Z] Platform:      darwin
+[debug] [2020-08-17T21:20:47.989Z] Node Version:  v10.16.3
+[debug] [2020-08-17T21:20:47.990Z] Time:          Mon Aug 17 2020 17:20:47 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-08-17T21:20:47.990Z] ----------------------------------------------------------------------
+[debug] [2020-08-17T21:20:47.990Z] 
+[debug] [2020-08-17T21:20:48.001Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-17T21:20:48.134Z] Error: Unexpected error determining execution environment: Invalid response from metadata service: incorrect Metadata-Flavor header.
+    at metadataAccessor (/Users/insanity/.nvm/versions/node/v10.16.3/lib/node_modules/firebase-tools/node_modules/gcp-metadata/build/src/index.js:60:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
